@@ -1,0 +1,583 @@
+SDET Programming questions. 
+
+ 
+
+Important Instructions :  
+
+ 
+
+Guidelines for Developing Programming Solutions 
+
+When developing programming solutions for any questions or tasks, please adhere to the following guidelines to ensure the code is logical, readable, and efficient: 
+
+Choice of Language: 
+
+- Select a preferred programming language such as Java, Python, etc., based on the question's requirements or your proficiency. 
+
+Logical Flow: 
+
+- Ensure the code follows a clear and logical sequence. Each step should logically follow from the previous one, leading to the desired outcome. 
+
+Clear Variable Naming: 
+
+- Use descriptive and meaningful names for variables, functions, and arguments. This makes the code easier to understand and maintain.  
+
+- For example, use `totalSum` instead of `a`, `calculateAverage` instead of `func1`, and `numberOfItems` instead of `n`. 
+
+Function Definition and Usage: 
+
+- Define functions with clear responsibilities. Each function should perform a distinct task. 
+
+- Ensure that functions have appropriate arguments and return values. 
+
+Documentation and Comments: 
+
+- Include comments and documentation to explain the purpose of the code, any important logic, and complex sections.  
+
+- This helps others understand the code and also serves as a reminder for yourself. 
+
+Exception Handling: 
+
+- Implement proper error handling to manage unexpected inputs or situations gracefully. Use try-catch blocks (Java) or try-except blocks (Python) where necessary. 
+
+Efficiency: 
+
+- Aim for efficient solutions, minimizing time and space complexity. Avoid redundant operations and optimize algorithms where possible. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1. Write a program for the below scenario,  
+
+ 
+
+Given the below JSON file, 
+
+ 
+
+{ 
+
+  "page": 1, 
+
+  "per_page": 6, 
+
+  "total": 12, 
+
+  "total_pages": 2, 
+
+  "data": [ 
+
+    { 
+
+      "id": 1, 
+
+      "email": "george.bluth@deloitte.com", 
+
+      "first_name": "George", 
+
+      "last_name": "Bluth", 
+
+      "avatar": "https://reqres.in/img/faces/1-image.jpg" 
+
+    }, 
+
+    { 
+
+      "id": 2, 
+
+      "email": "janet.weaver@example.com", 
+
+      "first_name": "Janet", 
+
+      "last_name": "Weaver", 
+
+      "avatar": "https://reqres.in/img/faces/2-image.jpg" 
+
+    }, 
+
+    { 
+
+      "id": 3, 
+
+      "email": "emma.wong@example.com", 
+
+      "first_name": "Emma", 
+
+      "last_name": "Wong", 
+
+      "avatar": "https://reqres.in/img/faces/3-image.jpg" 
+
+    }, 
+
+    { 
+
+      "id": 4, 
+
+      "email": "eve.holt@deloitte.com", 
+
+      "first_name": "Eve", 
+
+      "last_name": "Holt", 
+
+      "avatar": "https://reqres.in/img/faces/4-image.jpg" 
+
+    }, 
+
+    { 
+
+      "id": 5, 
+
+      "email": "charles.morris@example.com", 
+
+      "first_name": "Charles", 
+
+      "last_name": "Morris", 
+
+      "avatar": "https://reqres.in/img/faces/5-image.jpg" 
+
+    }, 
+
+    { 
+
+      "id": 6, 
+
+      "email": "tracey.ramos@deloitte.com", 
+
+      "first_name": "Tracey", 
+
+      "last_name": "Ramos", 
+
+      "avatar": "https://reqres.in/img/faces/6-image.jpg" 
+
+    } 
+
+  ], 
+
+  "support": { 
+
+    "url": "https://reqres.in/#support-heading", 
+
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!" 
+
+  } 
+
+} 
+
+ 
+
+ 
+
+Fetch the values inside the “data” key which is a list of dictionary key value pairs. 
+
+Iterate through each of the dictionary key value pairs and print the details in the console window, given the condition that only the users who are having “deloitte.com” domain in their email address. 
+
+And, whoever doesn’t have the e-mail domain as “deloitte.com”, replace the email address field value with the following string “Not a valid e-mail address” and print their details separately.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2. Write a program for the below scenario,  
+
+ 
+
+names = [“Mahesh”, “Dinesh”, “Kamalesh”, “Sathish”, “Suresh”, “Ramesh”] 
+
+weightage = [-2, 2, 1, -1, 3, 0] 
+
+ 
+
+Given lists : Names and their corresponding weightage scores. 
+
+ 
+
+ 
+
+ 
+
+Create an output list contains the names by following the below condition, 
+
+  
+
+If the weightage score is negative for the user, add the name of the user to the end of the output list. 
+
+If the weightage score is zero, remove those users from the list. 
+
+If the weightage score is positive, add them to the front of the list, given the condition that, the highest weightage score user should be added in the 0th index and the second highest should be added in the 1st index and so on..) 
+
+ 
+
+output_name_list = [“Suresh”, “Dinesh”, “Kamalesh”, “Sathish”, “Mahesh”]  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3. Write a program to extract all unique substrings with their frequency from the given string and the output should be in the format of dictionary where – character/string will be the key and their count will be the value (MEDIUM) 
+
+ 
+
+Input_str = “abababa” 
+
+ 
+
+Output =  
+
+{'a': 4,  
+
+'ab': 3,  
+
+'aba': 2, 
+
+'abab': 1, 
+
+'ababa': 1,  
+
+'ababab': 1,  
+
+'abababa': 1,  
+
+'b': 3,  
+
+'ba': 3,  
+
+'bab': 1,  
+
+'baba': 1,  
+
+'babab': 1,  
+
+'bababa': 1 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4. Write a script to read a large log file, process its contents to extract error messages only, and save them to a new file. 
+
+- Considerations: Ensure that the script performs efficiently even with very large files by using optimal data structures and algorithms. (High) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5. MAXIMUM PROFIT PROBLEM: (EASY) 
+ 
+Example 1: Input: prices = [7,1,5,3,6,4] 
+
+  
+
+Output: 5 
+
+ 
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. 
+
+Note: That buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. 
+
+  
+
+Example 2: Input: prices = [7,6,4,3,1] 
+
+Output: 0 
+
+Explanation: In this case, no transactions are done and the max profit = 0. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6. MERGE OVERLAPPING PROBLEM: (MEDIUM) 
+ 
+Example 1: Input: intervals = [[1,3],[2,6],[8,10],[15,18]] 
+
+Output: [[1,6], [8,10], [15,18]] 
+
+  
+
+Explanation: Since intervals [1,3] and [2,6] are overlapping we can merge them to form [1,6] intervals. 
+
+  
+
+Example 2: Input: [[1,4],[4,5]] 
+
+Output: [[1,5]] 
+
+  
+
+Explanation: Since intervals [1,4] and [4,5] are overlapping we can merge them to form [1,5]. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7. LONGEST PALINDROME PROBLEM: (MEDIUM) 
+Given a string s, return the longest palindromic substring in s. 
+
+  
+
+Example 1: 
+
+Input: s = "babad" 
+
+Output: "bab" 
+
+Explanation: "aba" is also a valid answer. 
+
+Example 2: 
+
+Input: s = "cbbd" 
+
+Output: "bb" 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8. BALANCED PARENTHESES PROBLEM: 
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. 
+
+  
+
+An input string is valid if: 
+
+  
+
+Open brackets must be closed by the same type of brackets. 
+
+Open brackets must be closed in the correct order. 
+
+Every close bracket has a corresponding open bracket of the same type. 
+
+  
+
+  
+
+Example 1: 
+
+Input: s = "()" 
+
+Output: true 
+
+Example 2: 
+
+Input: s = "()[]{}" 
+
+Output: true 
+
+Example 3: 
+
+Input: s = "(]" 
+
+Output: false 
+Example 4: 
+Input: s = "[()]" 
+
+Output: true 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+JAVA SPECIFIC (12 to 16) 
+
+9. Class Inspector 
+
+   - Problem Statement: Write a Java program that uses reflection to inspect a given class. The program should be able to list all the methods, fields, constructors, and annotations present in the class. 
+
+   - Example: 
+
+     ```java 
+
+     public class Example { 
+         private int id; 
+         public String name; 
+
+          
+         public Example() {} 
+ 
+         public void setId(int id) { 
+             this.id = id; 
+         }          
+ 
+         public int getId() { 
+             return id; 
+         } 
+     } 
+
+     ``` 
+When inspecting the `Example` class, the program should output all its methods, fields, constructors, and annotations. 
+
+ 
+
+10. Dynamic Method Invocation 
+
+   - Problem Statement: Write a Java program that uses reflection to dynamically invoke a method on an object. The method name and parameters should be provided at runtime. 
+
+   - Example: 
+
+     ```java 
+
+     public class Calculator { 
+         public int add(int a, int b) { 
+             return a + b; 
+         }          
+
+         public int subtract(int a, int b) { 
+             return a - b; 
+         } 
+     } 
+
+     ``` 
+The program should be able to invoke either the `add` or `subtract` method based on user input. 
+
+ 
+
+ 
+11. Basic Singleton Implementation 
+
+   - Problem Statement: Implement a basic Singleton class in Java. Ensure that only one instance of the class is created and provide a global point of access to it. 
+
+   - Example: 
+
+     ```java 
+
+     public class Singleton { 
+
+         private static Singleton instance; 
+
+          
+
+         private Singleton() {} 
+
+          
+
+         public static Singleton getInstance() { 
+
+             if (instance == null) { 
+
+                 instance = new Singleton(); 
+
+             } 
+
+             return instance; 
+
+         } 
+
+     } 
+
+     ``` 
+
+     Demonstrate the usage of the Singleton class in a main method. 
+
+ 
+
+ 
+
+ 
+
+12.  Thread-Safe Singleton 
+
+   - Problem Statement: Modify the basic Singleton implementation to make it thread-safe. Ensure that multiple threads do not create multiple instances of the Singleton class. 
+
+   - Example: 
+
+     ```java 
+
+     public class ThreadSafeSingleton { 
+
+         private static ThreadSafeSingleton instance; 
+
+          
+
+         private ThreadSafeSingleton() {} 
+
+          
+
+         public static synchronized ThreadSafeSingleton getInstance() { 
+
+             if (instance == null) { 
+
+                 instance = new ThreadSafeSingleton(); 
+
+             } 
+
+             return instance; 
+
+         } 
+
+     } 
+
+     ``` 
+
+     Demonstrate the thread-safe Singleton implementation in a multi-threaded environment. 
